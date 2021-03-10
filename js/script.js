@@ -6,8 +6,8 @@ function traer(){
     .then(data => {
         console.log(data.results['0'])
         contenido.innerHTML = `
-        <img src="${data.results['0'].picture.large}" class="img-fluid rounded-circle" width="100px">
-        <p>Nombre: ${data.results['0'].name.first}` + ` ` + `${data.results['0'].name.last}</p>` 
+        <img src="${data.results[0].picture.large}" class="img-fluid rounded-circle" width="100px">
+        <p>Nombre: ${data.results[0].name.first}` + ` ` + `${data.results['0'].name.last}</p>` 
         
     })
 }
